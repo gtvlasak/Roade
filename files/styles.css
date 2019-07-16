@@ -1,0 +1,613 @@
+/* Font Face information used for all fonts throughout the website.  One for the logo, one for graphics, and one for the headers.
+   Verdana was chosen as the standard font for content throughout the website, but was changed later on. */
+
+@font-face {
+    font-family: Arista;
+    src: url("fonts/Arista-Pro-Alternate-Bold-trial.ttf");
+}
+
+@font-face {
+    font-family: Bowlby;
+    src: url("fonts/Bowlby.ttf");
+}
+
+@font-face {
+    font-family: Uni Sans;
+    src: url("fonts/Uni\ Sans\ Heavy.otf");
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+/* End of font face section */
+
+/* SPLASH PAGE CSS, EXCLUSIVE TO THIS PAGE (NO NAV, ETC.) */
+
+.allWrap {
+    position: fixed;
+    background-image: url("images/splashbg.jpg");
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    background-size: 100%;
+    padding: 0;
+    top: 0;
+    left: 0;
+}
+
+.splashWrap {
+    display: flex;
+    justify-content: center;
+}
+
+.splashLogo {
+    margin: 0 auto;
+    margin-top: 10rem;
+}
+
+.formWrap {
+    height: 25rem;
+    margin: 2rem;
+    padding: 5%;
+    background: rgba(0, 0, 0, 0.75);
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+}
+
+.formHeader {
+    font-family: "Arista";
+    color: #ffff66;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.btnSplash {
+    margin: 1rem auto;
+    background-color: #ffff66;
+    border-color: #ffff66;
+}
+
+.btnSplash:hover {
+    background-color: transparent;
+    border-color: #ffff66;
+}
+
+.formLabels {
+    color: #ffff66;
+    width: 120px;
+    font-family: "Uni Sans";
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.splashLogo img {
+    height: 250px;
+    width: 400px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+/* Navbar stylings from header.php */
+
+.navbar {
+    border-radius: 1px;
+    box-shadow: 0px 1px 10px #111;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-family: "Uni Sans";
+}
+
+#navLogo {
+    height: 50px;
+    width: 135px;
+    object-fit: contain;
+}
+
+.nav-item {
+    font-family: "Uni Sans";
+    font-size: 1.3rem;
+    padding: 0rem 1rem;
+}
+
+.nav-link {
+    -webkit-transition: 0.5s all ease;
+    -moz-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+    text-shadow: 0 0 1px #fff;
+}
+
+.nav-link:hover {
+    color: #ffff66 !important;
+    text-shadow: 0 0 1px #111;
+    transition: color 0.5s linear;
+    -webkit-transition: color 0.3s linear;
+    -moz-transition: color 0.3s linear;
+}
+
+/* End of navbar stylings */
+
+/* Footer stylings from footer.php */
+
+footer {
+    position: relative;
+    float: right;
+    width: 100%;
+    bottom: 0;
+    margin-bottom: 0rem;
+    text-align: center;
+    background-color: rgb(197, 197, 197);
+    background-image: url("images/footer-bg.svg");
+    background-size: cover;
+    height: 100%;
+    padding-top: 4rem;
+    transition: all .5s ease-in-out;
+    overflow: hidden;
+    
+}
+
+footer:hover {
+    transform: scale(1.03);
+}
+
+.shadow {
+    -webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+    filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+    /* Similar syntax to box-shadow */
+  }
+
+.footerContainer {
+    margin-top: 15%;
+}
+
+.footerContent {
+    color: white;
+    list-style-type: none;
+    font-family: "Uni Sans";
+}
+
+.footerContent li a {
+    position: relative;
+    color: white;
+    right: 20px;
+}
+
+.footerContent li a:hover {
+    color: #ffff66;
+}
+
+.footerLogo {
+    font-family: "Arista";
+    width: 20rem;
+    object-fit: contain;
+}
+
+/* End of footer.php styles. */
+
+/* Common tag CSS stylings */
+
+body {
+    /*background: url("images/bolt@2x.png"); */
+    background-color: rgb(197, 197, 197);
+    background-repeat: repeat;
+    background-origin: content-box;
+    background-size: 9.5rem;
+}
+
+h1 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+input[type="submit"]
+{
+    background: transparent;
+    border: none;
+    color: white;
+    font-family: "Arista";
+    font-size: 20px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: "Uni Sans"
+}
+
+a:hover {
+    text-decoration: none !important;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/* End of common tag stylings */
+
+/* Beginning of homescreen for ROADE (portal.php) stylings and jumbotron, etc. */
+
+.jumbotron {
+    position: absolute;
+    background-color: black;
+    margin-top: 3.5rem;
+    position: relative;
+    height: 800px;
+    width: 100%;
+    padding: 0;
+}
+
+.roadeIcon {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-image: url("../files/images/jumbotron.jpg");
+    background-repeat: no-repeat;
+    border-bottom: 6px solid white;
+
+}
+
+#portalBanner {
+    position: absolute;
+    bottom: 2%;
+    right: 1%;
+
+}
+
+#jumboTitle {
+    font-family: "Uni Sans";
+    font-size: 3vw;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#jumboHeader {
+    font-family: "Uni Sans";
+    font-size: 3vw;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.yellowText {
+    color: #ffff66;
+}
+
+/* End of index page stylings for the jumbotron area. */
+
+/* Search section CSS for portal.php */
+
+.searchWrap {
+    height: 600px;
+    background-image: url('images/bolt.svg');
+    background-repeat: repeat;
+    background-size: 82px;
+    background-color: white;
+    padding-top: 6rem;
+    
+}
+
+.searchContainer {
+    position: relative;
+    height: 75%;
+    background-color: #fff;
+    -webkit-box-shadow: 3px 6px 5px 0px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 3px 6px 5px 0px rgba(0, 0, 0, 0.24);
+    box-shadow: 3px 6px 5px 0px rgba(0, 0, 0, 0.24);
+    padding: 3rem;
+    margin-bottom: 2.3rem;
+
+}
+
+.searchText {
+    position: relative;
+    top: 20%;
+    margin: 0 auto;
+    font-family: "Uni Sans";
+    font-size: 2.5vw;
+    color: #353b48;
+    text-shadow: 2px 2px 4px #555;
+}
+
+.searchbar{
+margin-bottom: auto;
+margin-top: auto;
+height: 60px;
+background-color: #353b48;
+border-radius: 30px;
+padding: 10px;
+
+}
+
+
+.search_input:after {
+    pointer-events: none;
+    content: "";
+}
+
+.search_input{
+color: #fff666;
+font-family: "Arista";
+border: 0;
+outline: 0;
+background: none;
+width: 0;
+caret-color:transparent;
+line-height: 40px;
+transition: width 0.4s linear;
+}
+
+.searchbar:hover > .searchform > .search_input{
+padding: 0 10px;
+width: 450px;
+caret-color:#fff666;
+transition: width 0.4s linear;
+}
+
+.searchbar:hover > .searchform > .search_icon{
+background: white;
+color: #353b48;
+}
+
+.search_icon{
+height: 40px;
+width: 40px;
+float: right;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+color:#fff666;
+}
+
+
+.submitSearch {
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+.suggested {
+    background: #353b48;
+    color: #fff666;
+    font-family: "Arista";
+    border-radius: 6px;
+    
+}
+
+.suggested ul li {
+    list-style-type: none;
+}
+
+.suggested:after {
+    pointer-events: none;
+    content: "";
+}
+
+
+/* CSS for the How It Works section on the portal.php page. */
+
+.howItWorks {
+    background-color: rgb(197, 197, 197);
+    border-top: 9px solid white;
+    height: 75%;
+    margin-right: 0px;
+}
+
+.howItWorks .container {
+    width: 100%;
+    margin: 0;
+    max-width: 2000px;
+    margin-right: 0px;
+}
+
+#hiwText {
+    font-family: "Uni Sans";
+    text-shadow: 0 0 1px #111;
+    margin-top: 3rem;
+}
+
+#hiwImg1 {
+    width: 210px;
+}
+
+#hiwImg2 {
+    width: 230px;
+}
+
+#hiwImg3 {
+    width: 350px;
+}
+
+.hiwContent {
+    margin-top: 6rem;
+}
+
+/* SEARCH PAGE CSS, DISPLAYS CITY INFO AND FLEET INFO */
+
+.cityBanner {
+    width: 100%;
+    height: 100%;
+}
+
+#cityText{
+    max-width: 2110px;
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    margin: 0 auto;
+}
+
+
+#cityTitle {
+    font-family: "Uni Sans";
+    font-size: 5vw;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#cityHeader {
+    font-family: "Uni Sans";
+    font-size: 5vw;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/* Table data is dated, as it was changed into a DIV-based section. Seemed better for future responsivity optimization. */ 
+
+.table {
+    background-color: grey;
+    border: 2px solid #ffff66;
+    width: 100%;
+}
+
+.table th {
+    width: auto !important;
+}
+
+.headText {
+    text-align: center;
+}
+
+.imgWrapper {
+    position: relative;
+    background-color: black;
+    height: 275px;
+    width: 315px;
+    object-fit: scale-down;
+    margin-bottom: 5px;
+}
+
+.imgWrapper img {
+    object-fit: fill;
+    height: 100%;
+    width: 100%;
+}
+
+/* NEW BEGINNING OF FLEET SECTION WITH DIV STRUCTURING */
+
+.fleetContainer {
+    float: left;
+  max-width: 100%; 
+ 
+}
+
+.fleetWrapper {
+    width: 100%;
+}
+
+
+.fleetItem {
+    margin: 20px;
+    border: 10px solid rgb(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, .7);
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    
+}
+
+.vehicleLabel {
+    font-family: "Uni Sans";
+    color: #ffff66;
+    text-shadow: 2px 2px 4px #000000;
+    margin-top: 31px;
+}
+
+.vehicleInfo {
+    font-size: 13px;
+    padding: 0px 30px;
+    margin-bottom: 35px;
+}
+
+.vehicleButtons {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.vehicleLink {
+    font-family: "Uni Sans" !important;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px #000000;
+    
+}
+
+.vehicleLink:hover {
+        text-decoration: none !important;
+        color: white;
+        text-shadow: 2px 2px 4px #000000;
+}
+
+.editVehicle {
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+    padding: 5px;
+}
+
+.deleteVehicle {
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+    padding: 5px;
+}
+
+/* FORM CSS HEAVILY FEATURED BELOW */
+
+
+
+#fleetForm {
+    background: grey;
+    box-shadow: 4px 2px 2px black;
+    border: 1px solid #ffff66;
+    border-radius: 2%;
+    margin: 10% 20%;
+    padding: 2.5% 10%;
+}
+
+.formBody {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.form-control::placeholder {
+    font-size: 12px;
+    font-weight: bold;
+    color: #ffff66;
+    opacity: .5;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/* --------------------------------------------------- */
+
+
+
+/* MEDIA QUERIES WERE TO GO HERE FOR OPTIMIZATION -- WILL WORK ON AT FUTURE DATE */
+
+@media screen and (max-width: 850px) {
+    
+
+    .jumbotron {
+        height: 800px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    /* Media queries for mobile devices on the details.php dynamic page. Image centering could use some work (any suggestions?) */
+
+    .photoWrapper {
+        float: none !important;
+        display: block;
+        margin: 0 auto;
+        width: 75%;
+    }
+}
